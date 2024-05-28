@@ -1,0 +1,52 @@
+$loader-count: 6;
+$loader-proportion: 200px;
+$loader-color: #50d7e4;
+$stagger: 0.1875s;
+$animation_config: (
+    name: swoosh,
+    duration: 600ms,
+    timing: cubic-bezier(.66, .14, .83, .67),
+    iteration: infinite,
+    direction: alternate,
+    fill-mode: both
+);
+
+@function sh-setup($config) {
+    @return zip(map-values($config)...);
+}
+
+@keyframes swoosh {
+    to {
+        transform: scale(1);
+    }
+}
+
+.loading {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    svg {
+        position: relative;
+        width: $loader-proportion;
+        height: $loader-proportion;
+
+        circle {
+            animation: sh-setup($animation_config);
+            position: absolute;
+            transform: scale(0);
+            transform-origin: center center;
+            fill: $loader-color;
+        }
+    }
+}
+
+
+
+@for $i from 1 through $loader-count {
+    .loading circle:nth-of-type(#{$i}) {
+        animation-delay: $i * $stagger;
+        fill: lighten($loader-color, $i * 3%);
+    }
+}
