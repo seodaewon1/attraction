@@ -1,0 +1,131 @@
+.header__logo {
+    a {
+        display: flex;
+        padding: 10px;
+        margin: 5px;
+
+        em {
+            width: 40px;
+            height: 40px;
+            display: block;
+            background-color: #fff;
+            margin-right: 10px;
+            margin-top: 8px;
+            text-align: center;
+            background-position: center;
+            background-repeat: no-repeat;
+
+            svg {
+                color: #000;
+                margin-top: 5px;
+            }
+        }
+
+
+
+        span {
+            font-size: 20px;
+            line-height: 1;
+            text-transform: uppercase;
+            font-weight: 900;
+            margin-left: 10px;
+
+            i {
+                font-weight: 400;
+            }
+        }
+    }
+}
+
+.header__menu {
+    .menu {
+        li {
+            margin: 5px;
+            border-radius: 2px;
+            transition: all 0.3s;
+            color: #ffffff;
+            background-color: #9c9c9c;
+
+            a {
+                font-size: 1rem;
+                display: inline-block;
+                padding: 10px 10px;
+                margin-top: 5px;
+
+                span {
+                    display: inline-block;
+                    vertical-align: 7px;
+                    font-weight: 700;
+                }
+
+                svg {
+                    width: 24px;
+                    height: 24px;
+                    margin-right: 10px;
+                }
+            }
+
+            &:hover {
+                background-color: #eeeeee;
+                color: #000;
+            }
+        }
+
+    }
+
+    .keyword {
+        padding: 10px;
+        margin-top: 50px;
+
+        li {
+            display: inline-block;
+
+            a {
+                display: inline-block;
+                padding: 5px 15px;
+                border: 1px solid #ffffff;
+                font-size: 1rem;
+                border-radius: 5px;
+                margin: 3px 3px;
+                transition: all 0.3s;
+                color: #ffffff;
+            }
+        }
+    }
+}
+
+.header__sns {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 260px;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    padding: 15px 0 15px;
+    background-color: var(--blackAlpha100);
+    backdrop-filter: blur(10px);
+
+    li {
+        display: inline-block;
+
+        a {
+            padding: 5px 7px;
+            display: inline-block;
+
+            svg {
+                width: 30px;
+                height: 30px;
+            }
+        }
+    }
+}
+
+@media (max-width: 960px) {
+    .header__logo {
+        position: fixed;
+        left: 0;
+        top: 0;
+    }
+}

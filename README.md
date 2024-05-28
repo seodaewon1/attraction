@@ -8,7 +8,7 @@
 4. index.js scss 경로 설정
 5. App.js
 6. Suspense 설정
-7. 각 체이지 메타 태그 설정(HelmetProvider)
+7. 각 페이지 메타 태그 설정(HelmetProvider)
 
 ## 실행하기
 `npm start` : 리액트 시작하기
