@@ -1,70 +1,44 @@
-# Getting Started with Create React App
+# Youtube API를 이용한 쇼핑몰 사이트
+- 나는 쇼핑물을 직접 운영하고싶은 사람이 많아 그 분들을 위한 사이트를 개발하고싶다.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 작업 순서
+1. 먼저 node.js를 설치하고, 버전을 확인합니다.
+2. 필요 없는 파일은 제거하고, 필요한 폴더를 설정합니다.
+3. Header설정
+4. index.js scss 경로 설정
+5. App.js
+6. Suspense 설정
+7. 각 체이지 메타 태그 설정(HelmetProvider)
 
-## Available Scripts
+## 실행하기
+`npm start` : 리액트 시작하기
 
-In the project directory, you can run:
+## 필요한 라이브러리 설치
+- react를 설치 `npx create-react-app 폴더이름` : 폴더를 생략하고 싶으면 .으로 표시
+- react-router-dom 설치 `npm install react-router-dom` : 주소를 설정하기 위한 라이브러리
+- axios 설치 `npm install axios` : API 라이브러리
+- react icon 설치 `npm install react-icons` : 리액트에 필요한 아이콘 
+- react-player 설치 `npm install react-player` : 유튜브 영상 재생
+- sass 설치 `npm install sass` : CSS 라이브러리
+- react-helmet-asyne 설치 `npm install react-helmet-async` : SEO
+- swiper 설치 `npm install swiper` : 이미지 슬라이트
 
-### `npm start`
+````
+npm install react-router-dom axios react-icons react-player sass react-helmet-async swiper
+````
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 라이브러리 삭제
+-npm uninstall ''
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 사용 스택
+- Node.js를 설치하고 활용할 거에요.
 
-### `npm test`
+## 트러블 슈팅
+- Node.js를 설치하는 도중에 폴더가 인식되지 않는 경우가 있어요. 이럴 땐 해당 경로에 직접 들어가 폴더를 생성해주면 문제가 해결돼요.
+- npm에서 에러가 발생할 수도 있는데, 이럴 경우 컴퓨터를 재부팅하면 해결될 수 있어요.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 단축키
+- rafce : .jsx 파일 생성
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## 슬라이더 기능 사이트
+(https://swiperjs.com/react)
