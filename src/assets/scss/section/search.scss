@@ -26,6 +26,19 @@
     }
 }
 
+.search__more {
+    margin-top: 100px;
+    text-align: center;
+
+    button {
+        padding: 10px 20px;
+        background-color: #ccc;
+        border-radius: 50px;
+        margin-bottom: 30px;
+        cursor: pointer;
+    }
+}
+
 @media(max-width:960px) {
     .search__inner {
         padding: 17px 20px 17px 220px;
