@@ -14,10 +14,13 @@
             text-align: center;
             background-position: center;
             background-repeat: no-repeat;
+            background-image: url(../../img/logo.png);
+            background-size: 300%;
 
             svg {
                 color: #000;
                 margin-top: 5px;
+                z-index: 10;
             }
         }
 

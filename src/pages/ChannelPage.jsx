@@ -14,12 +14,12 @@ const ChannelPage = () => {
     useEffect(() => {
         const fetchResults = async () => {
             try {
-                const detail = await fetch(`https://youtube.googleapis.com/youtube/v3/channels?part=snippet,brandingSettings,statistics&id=${channelID}&key=${process.env.REACT_APP_YOUTUBE_API_KEY}`)
+                const detail = await fetch(`https://youtube.googleapis.com/youtube/v3/channels?part=snippet,brandingSettings,statistics&id=${channelID}&key=${process.env.REACT_APP_YOUTUBE_API_KEY2}`)
                 const detaildata = await detail.json();
                 setChannelDetail(detaildata.items[0]);
                 console.log(detaildata);
 
-                const video = await fetch(`https://youtube.googleapis.com/youtube/v3/search?part=snippet&channelId=${channelID}&order=date&maxResults=48&key=${process.env.REACT_APP_YOUTUBE_API_KEY}`)
+                const video = await fetch(`https://youtube.googleapis.com/youtube/v3/search?part=snippet&channelId=${channelID}&order=date&maxResults=1&key=${process.env.REACT_APP_YOUTUBE_API_KEY2}`)
                 const videoData = await video.json();
                 setChannelVideo(videoData.items);
                 setNextPageToken(videoData.nextPageToken);
@@ -37,7 +37,7 @@ const ChannelPage = () => {
 
     const loadMoreVideos = async () => {
         if (nextPageToken) {
-            const nextVideo = await fetch(`https://youtube.googleapis.com/youtube/v3/search?part=snippet&channelId=${channelID}&maxResults=48&order=date&pageToken=${nextPageToken}&key=${process.env.REACT_APP_YOUTUBE_API_KEY}`)
+            const nextVideo = await fetch(`https://youtube.googleapis.com/youtube/v3/search?part=snippet&channelId=${channelID}&maxResults=1&order=date&pageToken=${nextPageToken}&key=${process.env.REACT_APP_YOUTUBE_API_KEY2}`)
             const nextVideoData = await nextVideo.json();
             setChannelVideo(prevVideos => [...prevVideos, ...nextVideoData.items]);
             setNextPageToken(nextVideoData.nextPageToken);

@@ -40,5 +40,8 @@ npm install react-router-dom axios react-icons react-player sass react-helmet-as
 ## 단축키
 - rafce : .jsx 파일 생성
 
+## 파일 업로드
+빌드파일만들기 - npm run build
+
 ## 슬라이더 기능 사이트
 (https://swiperjs.com/react)
