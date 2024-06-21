@@ -31,7 +31,7 @@ const VideoPage = () => {
 
         const fetchComments = async () => {
             try {
-                const response = await fetch(`https://youtube.googleapis.com/youtube/v3/commentThreads?part=snippet&videoId=${videoID}&key=${process.env.REACT_APP_YOUTUBE_API_KEY2}`);
+                const response = await fetch(`https://youtube.googleapis.com/youtube/v3/commentThreads?part=snippet&videoId=${videoID}&key=${process.env.REACT_APP_YOUTUBE_API_KEY}`);
                 const data = await response.json();
                 setComments(data.items);
                 setLoading(false);
