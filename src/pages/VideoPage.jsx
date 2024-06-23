@@ -19,7 +19,7 @@ const VideoPage = () => {
         const fetchVideoDetails = async () => {
             setLoading(true);
             try {
-                const response = await fetch(`https://youtube.googleapis.com/youtube/v3/videos?part=snippet,statistics&id=${videoID}&key=${process.env.REACT_APP_YOUTUBE_API_KEY2}`)
+                const response = await fetch(`https://youtube.googleapis.com/youtube/v3/videos?part=snippet,statistics&id=${videoID}&key=${process.env.REACT_APP_YOUTUBE_API_KEY}`)
                 const data = await response.json();
                 setVideoDetail(data.items[0]);
                 // console.log(data);

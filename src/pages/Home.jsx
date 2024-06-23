@@ -22,7 +22,8 @@ const Home = () => {
         <Main
             title="유튜버 채널"
             description="유튜버 채널 페이지입니다."
-        > <section id='videoViewPage'>
+        >
+            <section id='videoViewPage'>
                 {videoDetail && (
                     <div className='video__view'>
                         <div className='video__play'>
