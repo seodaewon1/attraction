@@ -12,6 +12,10 @@ WHAT TO WEAR은 YOUTUBE API를 이용하여 리액트로 제작한 사이트입�
 - 데일리 옷 추천   
 - 비오는 날 옷 추천   
 
+- 요즘 유행하는 옷 추천
+- 할인 하는 옷 추천
+- 코디 추천
+
 
 ## 기능
 - 영상 재생: 유튜브 api를 통해  유튜브 영상을 시청 할 수 있습니다.
@@ -20,5 +24,5 @@ WHAT TO WEAR은 YOUTUBE API를 이용하여 리액트로 제작한 사이트입�
 - 댓글 : 댓글과 다양한 정보를 볼 수 있습니다.
 
 ## 메인
-![img](/src/assets/img/banner.png)
+![img](/src/assets/img/main1.png)
 
