@@ -19,13 +19,6 @@ const Main = (props) => {
 
             <main id="main" role="main">
                 <Search />
-                <div className="text">
-                    <div className="main-text">
-                        <h1>WHAT</h1>
-                        <em>TO</em>
-                        <p>WEAR</p>
-                    </div>
-                </div>
                 {props.children}
             </main>
         </HelmetProvider>

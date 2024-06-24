@@ -46,8 +46,8 @@
             margin: 5px;
             border-radius: 2px;
             transition: all 0.3s;
-            color: #ffffff;
-            background-color: #6393b3de;
+            color: #5b5b5b;
+            background-color: #FAEDCD;
 
             a {
                 font-size: 1rem;
@@ -69,8 +69,8 @@
             }
 
             &:hover {
-                background-color: #eeeeee;
-                color: #000;
+                background-color: #b15d26;
+                color: #fff;
             }
         }
 
@@ -79,7 +79,7 @@
     .keyword {
         padding: 10px;
         margin-top: 50px;
-
+        text-align: center;
         li {
             display: inline-block;
 
