@@ -14,7 +14,7 @@ const SearchPage = () => {
         const fetchVideos = async () => {
             setLoading(true)
             try {
-                const response = await fetch(`https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=1&q=${searchID}&key=${process.env.REACT_APP_YOUTUBE_API_KEY}`);
+                const response = await fetch(`https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=4&q=${searchID}&key=${process.env.REACT_APP_YOUTUBE_API_KEY}`);
                 const data = await response.json();
                 setVideos(data.items);
                 setNextPageToken(data.nextPageToken);
@@ -34,7 +34,7 @@ const SearchPage = () => {
     }, [searchID])
     const loadMoreVideos = async () => {
         if (nextPageToken) {
-            const response = await fetch(`https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=1&q=${searchID}&pageToken=${nextPageToken}&key=${process.env.REACT_APP_YOUTUBE_API_KEY} `)
+            const response = await fetch(`https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=4&q=${searchID}&pageToken=${nextPageToken}&key=${process.env.REACT_APP_YOUTUBE_API_KEY} `)
             const data = await response.json();
             setVideos(prevVideos => [...prevVideos, ...data.items]);
             setNextPageToken(data.nextPageToken);
