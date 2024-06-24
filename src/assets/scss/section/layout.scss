@@ -32,9 +32,10 @@
 
 .home__search {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     text-align: center;
     margin-top: 20px;
+    gap: 30px;
 }
 .home__box{
     width: 400px;
@@ -54,7 +55,7 @@
     }
     p{
         font-size: 1.2rem;
-        color:#616161;
+        color:#313131;
     }
 }
 
