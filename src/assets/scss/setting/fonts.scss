@@ -1,78 +1,124 @@
 @font-face {
-    font-family: 'Bazzi';
-    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/Bazzi.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+  font-family: "Bazzi";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/Bazzi.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: "nexonLv1";
-    font-weight: 100;
-    font-style: normal;
-    src: url("../../fonts/nexonLv1-Light.woff2") format("woff2"),
-        url("../../fonts/nexonLv1-Light.woff") format("woff");
-    font-display: swap;
+  font-family: "nexonLv1";
+  font-weight: 100;
+  font-style: normal;
+  src: url("../../fonts/nexonLv1-Light.woff2") format("woff2"),
+    url("../../fonts/nexonLv1-Light.woff") format("woff");
+  font-display: swap;
 }
 
 @font-face {
-    font-family: "nexonLv1";
-    font-weight: 400;
-    font-style: normal;
-    src: url("../../fonts/nexonLv1-Regular.woff2") format("woff2"),
-        url("../../fonts/nexonLv1-Regular.woff") format("woff");
-    font-display: swap;
+  font-family: "nexonLv1";
+  font-weight: 400;
+  font-style: normal;
+  src: url("../../fonts/nexonLv1-Regular.woff2") format("woff2"),
+    url("../../fonts/nexonLv1-Regular.woff") format("woff");
+  font-display: swap;
 }
 
 @font-face {
-    font-family: "nexonLv1";
-    font-weight: 700;
-    font-style: normal;
-    src: url("../../fonts/nexonLv1-Bold.woff2") format("woff2"),
-        url("../../fonts/nexonLv1-Bold.woff") format("woff");
-    font-display: swap;
+  font-family: "nexonLv1";
+  font-weight: 700;
+  font-style: normal;
+  src: url("../../fonts/nexonLv1-Bold.woff2") format("woff2"),
+    url("../../fonts/nexonLv1-Bold.woff") format("woff");
+  font-display: swap;
 }
 
 @font-face {
-    font-family: "nanumSquareNeo";
-    font-weight: 300;
-    font-style: normal;
-    src: url("../../fonts/nanumSquareNeo-Light.woff2") format("woff2"),
-        url("../../fonts/nanumSquareNeo-Light.woff") format("woff");
-    font-display: swap;
+  font-family: "nanumSquareNeo";
+  font-weight: 300;
+  font-style: normal;
+  src: url("../../fonts/nanumSquareNeo-Light.woff2") format("woff2"),
+    url("../../fonts/nanumSquareNeo-Light.woff") format("woff");
+  font-display: swap;
 }
 
 @font-face {
-    font-family: "nanumSquareNeo";
-    font-weight: 400;
-    font-style: normal;
-    src: url("../../fonts/nanumSquareNeo-Regular.woff2") format("woff2"),
-        url("../../fonts/nanumSquareNeo-Regular.woff") format("woff");
-    font-display: swap;
+  font-family: "nanumSquareNeo";
+  font-weight: 400;
+  font-style: normal;
+  src: url("../../fonts/nanumSquareNeo-Regular.woff2") format("woff2"),
+    url("../../fonts/nanumSquareNeo-Regular.woff") format("woff");
+  font-display: swap;
 }
 
 @font-face {
-    font-family: "nanumSquareNeo";
-    font-weight: 700;
-    font-style: normal;
-    src: url("../../fonts/nanumSquareNeo-Bold.woff2") format("woff2"),
-        url("../../fonts/nanumSquareNeo-Bold.woff") format("woff");
-    font-display: swap;
+  font-family: "nanumSquareNeo";
+  font-weight: 700;
+  font-style: normal;
+  src: url("../../fonts/nanumSquareNeo-Bold.woff2") format("woff2"),
+    url("../../fonts/nanumSquareNeo-Bold.woff") format("woff");
+  font-display: swap;
 }
 
 @font-face {
-    font-family: "nanumSquareNeo";
-    font-weight: 800;
-    font-style: normal;
-    src: url("../../fonts/nanumSquareNeo-ExtraBold.woff2") format("woff2"),
-        url("../../fonts/nanumSquareNeo-ExtraBold.woff") format("woff");
-    font-display: swap;
+  font-family: "nanumSquareNeo";
+  font-weight: 800;
+  font-style: normal;
+  src: url("../../fonts/nanumSquareNeo-ExtraBold.woff2") format("woff2"),
+    url("../../fonts/nanumSquareNeo-ExtraBold.woff") format("woff");
+  font-display: swap;
 }
 
 @font-face {
-    font-family: "nanumSquareNeo";
-    font-weight: 900;
-    font-style: normal;
-    src: url("../../fonts/nanumSquareNeo-Black.woff2") format("woff2"),
-        url("../../fonts/nanumSquareNeo-Black.woff") format("woff");
-    font-display: swap;
+  font-family: "nanumSquareNeo";
+  font-weight: 900;
+  font-style: normal;
+  src: url("../../fonts/nanumSquareNeo-Black.woff2") format("woff2"),
+    url("../../fonts/nanumSquareNeo-Black.woff") format("woff");
+  font-display: swap;
+}
+@font-face {
+  font-family: "GmarketSans";
+  font-weight: 300;
+  font-style: normal;
+  src: url("https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansLight.eot");
+  src: url("https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansLight.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansLight.woff2")
+      format("woff2"),
+    url("https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansLight.woff")
+      format("woff"),
+    url("https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansLight.ttf")
+      format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "GmarketSans";
+  font-weight: 500;
+  font-style: normal;
+  src: url("https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansMedium.eot");
+  src: url("https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansMedium.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansMedium.woff2")
+      format("woff2"),
+    url("https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansMedium.woff")
+      format("woff"),
+    url("https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansMedium.ttf")
+      format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "GmarketSans";
+  font-weight: 700;
+  font-style: normal;
+  src: url("https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansBold.eot");
+  src: url("https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansBold.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansBold.woff2")
+      format("woff2"),
+    url("https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansBold.woff")
+      format("woff"),
+    url("https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansBold.ttf")
+      format("truetype");
+  font-display: swap;
 }
