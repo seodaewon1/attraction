@@ -13,7 +13,7 @@ const Home = () => {
     setCurrentCategory(category);
     try {
       const response = await fetch(
-        `https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=4&q=${query}&key=${process.env.REACT_APP_YOUTUBE_API_KEY2}`
+        `https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=4&q=${query}&key=${process.env.REACT_APP_YOUTUBE_API_KEY}`
       );
       const data = await response.json();
       setVideosByCategory((prevVideos) => ({
